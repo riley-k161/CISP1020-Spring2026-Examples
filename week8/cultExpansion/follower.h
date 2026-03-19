@@ -20,7 +20,8 @@ public:
     Follower(std::string name);
     //copy constructor
     Follower(const Follower& other);
-    //destructor (should be virtual)
+    //destructor (should be virtual-o.w. deleting an obj that's
+    //derived from Follower will only call the Follower destructor)
     virtual ~Follower();
 
     // Generic performAction- pure virtual function that

@@ -32,7 +32,6 @@ int main() {
     cult[1]->performAction();
 
     //sacrifice!
-    cout << cult.size() << endl;
     delete cult[1]; //this doesn't modify the vector size
     cult.pop_back();
 
